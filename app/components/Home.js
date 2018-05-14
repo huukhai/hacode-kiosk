@@ -8,6 +8,7 @@ import {
   Row,
   Col
 } from 'reactstrap';
+import { getImageSrc } from '../utils/imageUtils';
 
 export default class Home extends Component {
   render() {
@@ -17,7 +18,7 @@ export default class Home extends Component {
       return (
         <Col className='d-flex h-100 justify-content-center align-self-center' key={`category_${key}`}>
           <button className="btn btn-link" onClick={() => this.props.history.push(`/products/${key}`)}>
-            <img src={product['image']} className="rounded-circle category-btn" alt="Cinque Terre" />
+            <img src={getImageSrc(product['image'])} className="rounded-circle category-btn" alt="Cinque Terre" />
           </button>
         </Col>
       )

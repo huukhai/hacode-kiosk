@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
 import { Row, Col } from 'reactstrap';
+import { getImageSrc } from '../utils/imageUtils';
 
 import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
 
@@ -13,7 +14,7 @@ export default class Products extends Component<Props> {
         <span onClick={() => this.props.history.push(`/details/${this.props.match.params.category}/${product['code']}`)} style={{cursor: 'pointer'}}>
           <Card>
             <CardMedia>
-              <img className="product-list-image" src={product.image} alt=""/>
+              <img className="product-list-image" src={getImageSrc(product.image)} alt=""/>
             </CardMedia>
             <CardTitle
               title={product['name']}
