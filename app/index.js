@@ -24,10 +24,22 @@ let products = {
     "name": "Máy in mã vạch 2",
     "image": "https://product.hstatic.net/1000246569/product/may-quet-ma-vach-qbt2430__1__c8247b68b50a4c2c80e1cb0c12c9a32d_master.jpg",
     "data": [
-      { "code": "hacode01", "name": "Máy in mã vạch hacode 01", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 01", "image": "https://product.hstatic.net/1000246569/product/may-in-ma-vach-godex-ez1100-plus_master.jpg", "product_code": "EZ1107 Plus", "pdf": "test.pdf" },
-      { "code": "hacode02", "name": "Máy in mã vạch hacode 02", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 02", "image": "https://product.hstatic.net/1000246569/product/may-in-ma-vach-godex-ez1100-plus_master.jpg", "product_code": "EZ1108 Plus", "pdf": "test.pdf" },
-      { "code": "hacode03", "name": "Máy in mã vạch hacode 03", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 03", "image": "https://product.hstatic.net/1000246569/product/may-in-ma-vach-godex-ez1100-plus_master.jpg", "product_code": "EZ1109 Plus", "pdf": "test.pdf" },
-      { "code": "hacode06", "name": "Máy in mã vạch hacode 06", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 06", "image": "https://product.hstatic.net/1000246569/product/may-in-ma-vach-godex-ez1100-plus_master.jpg", "product_code": "EZ1110 Plus", "pdf": "test.pdf" }
+      { "code": "hacode01", "name": "Máy in mã vạch hacode 01", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 01", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1107 Plus", "pdf": "test.pdf" },
+      { "code": "hacode02", "name": "Máy in mã vạch hacode 02", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 02", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1108 Plus", "pdf": "test.pdf" },
+      { "code": "hacode03", "name": "Máy in mã vạch hacode 03", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 03", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1109 Plus", "pdf": "test.pdf" },
+      { "code": "hacode06", "name": "Máy in mã vạch hacode 06", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 06", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1110 Plus", "pdf": "test.pdf" },
+      { "code": "hacode07", "name": "Máy in mã vạch hacode 01", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 01", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1107 Plus", "pdf": "test.pdf" },
+      { "code": "hacode08", "name": "Máy in mã vạch hacode 02", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 02", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1108 Plus", "pdf": "test.pdf" },
+      { "code": "hacode09", "name": "Máy in mã vạch hacode 03", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 03", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1109 Plus", "pdf": "test.pdf" },
+      { "code": "hacode10", "name": "Máy in mã vạch hacode 06", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 06", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1110 Plus", "pdf": "test.pdf" },
+      { "code": "hacode11", "name": "Máy in mã vạch hacode 01", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 01", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1107 Plus", "pdf": "test.pdf" },
+      { "code": "hacode12", "name": "Máy in mã vạch hacode 02", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 02", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1108 Plus", "pdf": "test.pdf" },
+      { "code": "hacode13", "name": "Máy in mã vạch hacode 03", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 03", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1109 Plus", "pdf": "test.pdf" },
+      { "code": "hacode14", "name": "Máy in mã vạch hacode 06", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 06", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1110 Plus", "pdf": "test.pdf" },
+      { "code": "hacode15", "name": "Máy in mã vạch hacode 01", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 01", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1107 Plus", "pdf": "test.pdf" },
+      { "code": "hacode16", "name": "Máy in mã vạch hacode 02", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 02", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1108 Plus", "pdf": "test.pdf" },
+      { "code": "hacode17", "name": "Máy in mã vạch hacode 03", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 03", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1109 Plus", "pdf": "test.pdf" },
+      { "code": "hacode18", "name": "Máy in mã vạch hacode 06", "descriptions": "Đây là máy in mã vạch mang thương hiệu Hacode 06", "image": "https://www.w3schools.com/css/img_lights.jpg", "product_code": "EZ1110 Plus", "pdf": "test.pdf" }
     ]
   },
   "3": {

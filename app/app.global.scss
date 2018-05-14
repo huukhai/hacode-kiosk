@@ -9,8 +9,10 @@ body {
   position: relative;
   color: white;
   height: 100vh;
-  background-color: #FBFAE1;
-  background-image: linear-gradient(45deg, rgba(0, 216, 255, 0.5) 10%, rgba(0, 1, 127, 0.7));
+  // background-color: #FBFAE1;
+  // background-image: linear-gradient(45deg, rgba(0, 216, 255, 0.5) 10%, rgba(0, 1, 127, 0.7));
+  background-color: rgb(171, 214, 198);
+  background-image: linear-gradient(45deg, rgba(212, 143, 197, 0.48) 10%, rgba(236, 239, 218, 0.7));
   font-family: Arial, Helvetica, Helvetica Neue, serif;
   overflow: hidden;
   /* display:flex; */
@@ -61,16 +63,21 @@ a:hover {
 }
 
 .app-nav-bar {
-  background-color: #6C567B !important;
+  background-color: #616161 !important;
 }
 
 .product-list-image {
-  width: 100%;
+  min-width: 100%;
+  height: '180px';
 }
 
 .product-list {
-  margin: 5px 15px;
-  overflow: auto;
+  margin-left: 0px;
+  overflow-y: auto;
+  height: calc(100vh - 64px);
+  padding: 5px 10px;
+  width: 100vw;
+  //margin-right: 2px;
 }
 
 .product-list-item {
