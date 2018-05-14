@@ -1,39 +1,45 @@
 import React, { Component } from 'react';
-import { List, ListItem } from 'material-ui/List';
-import Divider from 'material-ui/Divider';
-import Subheader from 'material-ui/Subheader';
-import Avatar from 'material-ui/Avatar';
+import { GridList, GridTile } from 'material-ui/GridList';
+import IconButton from 'material-ui/IconButton';
+import StarBorder from 'material-ui/svg-icons/toggle/star-border';
+
+const styles = {
+    titleStyle: {
+        color: '#FCFCFC',
+        fontSize: 13,
+    },
+    subtitleStyle: {
+        fontSize: 10,
+    },
+};
 
 class ProductDetailList extends Component {
     render() {
-        let items = this.props.productList.map((product, index) => {
-            let ret = [];
-            if (index > 0) {
-                ret.push(<Divider inset={true} key={`div-${index}`}/>);
-            }
-            ret.push(
-                <ListItem
-                    leftAvatar={<Avatar src={product.image} />}
-                    primaryText={product['name']}
-                    secondaryText={
-                        <p>
-                            <span style={{ color: 'black' }}>{product['product_code']}</span> --
-                            {product['descriptions']}
-                        </p>
-                    }
-                    secondaryTextLines={2}
-                    key={`items-${product['code']}`}
-                />
-            )
+        let items = this.props.productList.map(product => (
+            <a onClick={() => this.props.onChangeProduct(product['code'])} key={`items-${product['code']}`} style={{cursor: 'pointer'}}>
+                <GridTile
+                    title={product['name']}
+                    subtitle={<span><i>{product['product_code']}</i></span>}
+                    subtitleStyle={styles.subtitleStyle}
+                    titleStyle={styles.titleStyle}
+                    titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+                >
 
-            return ret;
-        });
+                    <img src={product.image} style={{ maxWidth: '100%' }} />
+
+                </GridTile>
+            </a>
+        ));
 
         return (
-            <div>
-                <List>
+            <div className="product-detail-list">
+                <GridList
+                    cols={1}
+                    cellHeight={100}
+                    padding={9}
+                >
                     {items}
-                </List>
+                </GridList>
             </div>
         )
     }

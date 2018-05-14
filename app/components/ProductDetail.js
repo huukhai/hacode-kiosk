@@ -49,11 +49,22 @@ export const CustomPages = (props) => {
 };
 
 export default class Counter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { productId: this.props.match.params.id };
+    this.onChangeProduct = this.onChangeProduct.bind(this);
+  }
+
+  onChangeProduct(newId) {
+    this.setState({ productId: newId });
+  }
+
   render() {
     let { products } = this.props;
-    let productCode = this.props.match.params.id;
+    //let productCode = this.props.match.params.id;
     let lstProduct = products['data'] || [];
-    let product = lstProduct.find(item => item.code == productCode) || {};
+    console.log('this.state.productId: ', this.state.productId)
+    let product = lstProduct.find(item => item.code == this.state.productId) || {};
 
     return (
       <div>
@@ -66,7 +77,7 @@ export default class Counter extends Component {
 
         <Row>
           <Col xs="2" sm="2" md="2" lg="2">
-            <ProductDetailList productList={products['data']} />
+            <ProductDetailList productList={products['data']} onChangeProduct={this.onChangeProduct} />
           </Col>
           <Col xs="10" sm="10" md="10" lg="10" style={{ backgroundColor: 'gray', height: '100vh' }}>
             <PDFViewer
