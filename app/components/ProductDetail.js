@@ -56,26 +56,10 @@ export default class Counter extends Component {
     this.setState({ productId: newId });
   }
 
-  // componentWillMount = () => {
-  //   this.pdf = undefined;
-  //   let { products } = this.props;
-  //   let lstProduct = products['data'] || [];
-  //   let product = lstProduct.find(item => item.code == this.state.productId) || {};
-  //   console.log('PDF: ', product['pdf'])
-  //   this.pdf = fileUtils.getPdfBase64(product['pdf']);
-  // }
-
-  // componentWillUnmount() {
-  //   this.pdf = undefined;
-  // }
-
   render() {
     let { products } = this.props;
     let lstProduct = products['data'] || [];
     let product = lstProduct.find(item => item.code == this.state.productId) || {};
-    //let pdf = fileUtils.getPdfBase64(product['pdf']);
-    //console.log('getListPdf: ', fileUtils.getListPdf())
-    //let pdf = require(`../pdf/${product['pdf']}`);
 
     return (
       <div>
@@ -88,7 +72,7 @@ export default class Counter extends Component {
 
         <Row>
           <Col xs="2" sm="2" md="2" lg="2">
-            <ProductDetailList productList={products['data']} onChangeProduct={this.onChangeProduct} />
+            <ProductDetailList productList={products['data']} onChangeProduct={this.onChangeProduct} selected={this.state.productId} />
           </Col>
           <Col xs="10" sm="10" md="10" lg="10" style={{ backgroundColor: 'gray', height: '100vh' }}>
             <PDFViewer
