@@ -81,6 +81,8 @@ export default class Counter extends Component {
                 url: fileUtils.getPdf(product['pdf'])
               }}
               css="customViewer"
+              //className="customViewer"
+              //fillHeight
               navigation={{
                 elements: {
                   previousPageBtn: CustomPrevButton,
