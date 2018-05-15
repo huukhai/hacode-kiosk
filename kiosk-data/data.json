@@ -1,0 +1,162 @@
+{
+    "1": {
+        "name": "Đầu đọc mã vạch",
+        "image": "icon 1.jpg",
+        "data": [
+            {
+                "code": "6500a",
+                "name": "Đầu  đọc mã vạch Sunlux 6500A",
+                "descriptions": "",
+                "image": "6500a.jpg",
+                "product_code": "Sunlux XL-6500A",
+                "pdf": "6500a.pdf"
+            },
+            {
+                "code": "9309",
+                "name": "Đầu  đọc mã vạch Sunlux XL-9309",
+                "descriptions": "",
+                "image": "9309.jpg",
+                "product_code": "Sunlux XL-9309",
+                "pdf": "9309.pdf"
+            },
+            {
+                "code": "2002",
+                "name": "Đầu  đọc mã vạch Sunlux XL-2002",
+                "descriptions": "",
+                "image": "2002.jpg",
+                "product_code": "Sunlux XL-2002",
+                "pdf": "2002.pdf"
+            },
+            {
+                "code": "3100",
+                "name": "Đầu  đọc mã vạch Sunlux XL-3100",
+                "descriptions": "",
+                "image": "3100.jpg",
+                "product_code": "Sunlux XL-3100",
+                "pdf": "3100.pdf"
+            },
+            {
+                "code": "qw2100",
+                "name": "Đầu  đọc mã vạch QW2100",
+                "descriptions": "",
+                "image": "qw2100.jpg",
+                "product_code": "QW2100",
+                "pdf": "qw2100.pdf"
+            },
+            {
+                "code": "rf250hd",
+                "name": "Đầu  đọc mã vạch ATS RF250HD",
+                "descriptions": "",
+                "image": "250hd.jpg",
+                "product_code": "ATS-RF250HD",
+                "pdf": "rf250hd.pdf"
+            },
+            {
+                "code": "qd2430",
+                "name": "Đầu  đọc mã vạch QD2430",
+                "descriptions": "",
+                "image": "2430.jpg",
+                "product_code": "QD2430",
+                "pdf": "qd2430.pdf"
+            },
+            {
+                "code": "ls228",
+                "name": "Đầu  đọc mã vạch LS2208",
+                "descriptions": "",
+                "image": "ls2208.jpg",
+                "product_code": "LS2208",
+                "pdf": "ls2208.pdf"
+            },
+            {
+                "code": "yj5900",
+                "name": "Đầu  đọc mã vạch YJ5900",
+                "descriptions": "",
+                "image": "5900.jpg",
+                "product_code": "YJ5900",
+                "pdf": "yj5900.pdf"
+            },
+            {
+                "code": "1250g",
+                "name": "Đầu  đọc mã vạch Honeywell 1250G",
+                "descriptions": "",
+                "image": "1250g.jpg",
+                "product_code": "1250G",
+                "pdf": "1250g.pdf"
+            },
+            {
+                "code": "9208",
+                "name": "Đầu  đọc mã vạch DS9208",
+                "descriptions": "",
+                "image": "9208.jpg",
+                "product_code": "DS9208",
+                "pdf": "9208.pdf"
+            }
+        ]
+    },
+    "2": {
+        "name": "Máy in hóa đơn",
+        "image": "icon2.jpg",
+        "data": [
+            {
+                "code": "atp58t",
+                "name": "Máy in hóa đơn ATP 58T",
+                "descriptions": "",
+                "image": "58t.jpg",
+                "product_code": "ATP58T",
+                "pdf": "atp58t.pdf"
+            },
+            {
+                "code": "apos250",
+                "name": "Máy in hóa đơn APOS 250",
+                "descriptions": "",
+                "image": "apos250.jpg",
+                "product_code": "APOS250",
+                "pdf": "apos250.pdf"
+            },
+            {
+                "code": "apos100",
+                "name": "Máy in hóa đơn APOS P100",
+                "descriptions": "",
+                "image": "apos100.jpg",
+                "product_code": "APOS P100",
+                "pdf": "apos100.pdf"
+            }
+        ]
+    },
+    "3": {
+        "name": "Máy in mã vạch ",
+        "image": "icon3.jpg",
+        "data": [
+            {
+                "code": "te200",
+                "name": "Máy in mã vạch TE200",
+                "descriptions": "",
+                "image": "te200.jpg",
+                "product_code": "TE200",
+                "pdf": "te200.pdf"
+            },
+            {
+                "code": "te300",
+                "name": "Máy in mã vạch TE300",
+                "descriptions": "",
+                "image": "te300.jpg",
+                "product_code": "TE300",
+                "pdf": "te300.pdf"
+            }
+        ]
+    },
+    "4": {
+        "name": "Màn hình cảm ứng, POS",
+        "image": "icon4.jpg",
+        "data": [
+            {
+                "code": "e715",
+                "name": "POS bán hàng E715",
+                "descriptions": "",
+                "image": "e715.jpg",
+                "product_code": "E715",
+                "pdf": "e715.pdf"
+            }
+        ]
+    }
+}

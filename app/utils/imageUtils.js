@@ -1,12 +1,9 @@
-var path = require('path');
-const fs = require('fs');
+import * as fileUtils from './fileUtils';
 
-const imageFolder = path.resolve(__dirname, 'images');
-
-export const getImageSrc = url => {
-    if (url.startsWith('http' || url.startsWith('/'))) {
-        return url;
+export const getImageSrc = image => {
+    if (image.startsWith('http') || image.startsWith('/')) {
+        return image;
     } else {
-        return path.resolve(imageFolder, url);
+        return fileUtils.getImage(image);
     }
 }

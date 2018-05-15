@@ -4,10 +4,7 @@ import AppBar from 'material-ui/AppBar';
 import ProductDetailList from './ProductDetailList';
 import { Row, Col } from 'reactstrap';
 import PDFViewer from 'mgr-pdf-viewer-react';
-var path = require('path');
-const fs = require('fs');
-
-const pdf_folder = path.resolve(__dirname, 'pdf');
+import * as fileUtils from '../utils/fileUtils';
 
 export const CustomPrevButton = (props) => {
   const {
@@ -59,12 +56,26 @@ export default class Counter extends Component {
     this.setState({ productId: newId });
   }
 
+  // componentWillMount = () => {
+  //   this.pdf = undefined;
+  //   let { products } = this.props;
+  //   let lstProduct = products['data'] || [];
+  //   let product = lstProduct.find(item => item.code == this.state.productId) || {};
+  //   console.log('PDF: ', product['pdf'])
+  //   this.pdf = fileUtils.getPdfBase64(product['pdf']);
+  // }
+
+  // componentWillUnmount() {
+  //   this.pdf = undefined;
+  // }
+
   render() {
     let { products } = this.props;
-    //let productCode = this.props.match.params.id;
     let lstProduct = products['data'] || [];
-    console.log('this.state.productId: ', this.state.productId)
     let product = lstProduct.find(item => item.code == this.state.productId) || {};
+    //let pdf = fileUtils.getPdfBase64(product['pdf']);
+    //console.log('getListPdf: ', fileUtils.getListPdf())
+    //let pdf = require(`../pdf/${product['pdf']}`);
 
     return (
       <div>
@@ -81,8 +92,9 @@ export default class Counter extends Component {
           </Col>
           <Col xs="10" sm="10" md="10" lg="10" style={{ backgroundColor: 'gray', height: '100vh' }}>
             <PDFViewer
+              key={product['pdf']}
               document={{
-                file: path.resolve(pdf_folder, product['pdf'])
+                url: fileUtils.getPdf(product['pdf'])
               }}
               css="customViewer"
               navigation={{

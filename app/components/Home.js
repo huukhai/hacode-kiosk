@@ -1,10 +1,7 @@
 // @flow
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-//import styles from './Home.css';
 import HomeCarousel from './HomeCarousel';
 import {
-  Container,
   Row,
   Col
 } from 'reactstrap';
@@ -12,13 +9,13 @@ import { getImageSrc } from '../utils/imageUtils';
 
 export default class Home extends Component {
   render() {
-    let { products } = this.props;
-    let list = Object.keys(products).map(key => {
-      let product = products[key];
+    const { products } = this.props;
+    const list = Object.keys(products).map(key => {
+      const product = products[key];
       return (
         <Col className='d-flex h-100 justify-content-center align-self-center' key={`category_${key}`}>
           <button className="btn btn-link" onClick={() => this.props.history.push(`/products/${key}`)}>
-            <img src={getImageSrc(product['image'])} className="rounded-circle category-btn" alt="Cinque Terre" />
+            <img src={getImageSrc(product["image"])} className="rounded-circle category-btn" alt="Cinque Terre" />
           </button>
         </Col>
       )

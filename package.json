@@ -1,7 +1,7 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "version": "0.13.2",
+  "name": "hacode-kiosk",
+  "productName": "hacode-kiosk",
+  "version": "1.0.0",
   "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
   "scripts": {
     "build": "concurrently \"npm run build-main\" \"npm run build-renderer\"",
@@ -32,8 +32,8 @@
   },
   "browserslist": "electron 1.6",
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
+    "productName": "hacode-kiosk",
+    "appId": "vn.hacode.Kiosk",
     "files": [
       "dist/",
       "node_modules/",
@@ -41,6 +41,9 @@
       "main.prod.js",
       "main.prod.js.map",
       "package.json"
+    ],
+    "extraResources": [
+      "kiosk-data/"
     ],
     "dmg": {
       "contents": [
@@ -140,7 +143,7 @@
     "css-loader": "^0.28.9",
     "detect-port": "^1.2.2",
     "electron": "^1.7.11",
-    "electron-builder": "^19.55.3",
+    "electron-builder": "^20.13.3",
     "electron-devtools-installer": "^2.2.3",
     "electron-rebuild": "^1.7.3",
     "enzyme": "^3.3.0",
@@ -192,8 +195,10 @@
     "electron-debug": "^1.5.0",
     "font-awesome": "^4.7.0",
     "history": "^4.7.2",
+    "jquery": "^3.3.1",
     "material-ui": "^0.20.1",
     "mgr-pdf-viewer-react": "^1.0.0",
+    "popper.js": "^1.14.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^4.0.0-beta.13",
